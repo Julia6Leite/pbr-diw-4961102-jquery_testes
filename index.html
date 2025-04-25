@@ -7,6 +7,8 @@
     <link rel="icon" href="assets/img/logo_pucminas.png" type="image/png">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <script src="assets/js/bootstrap.bundle.min.js" ></script>    
+    <script src="assets/js/jquery-3.7.1.min.js" ></script>  
+    <script src="assets/js/main.js"></script>
 </head>
 <body>
     <div class="container">
@@ -21,7 +23,7 @@
             </div>
         </div>    
     </div>
-    <div class="container bg-primary-subtle">
+    <div class="container bg-primary-subtle" id="selecao_games"> 
         <div class="row p-4 text-center">
             <div class="col-12">
                 <h1 class="text-center"> Seleção de Game</h1>                        
@@ -34,7 +36,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Sorte do Dia</h5>
                       <p class="card-text">Veja o que o destino te prepara.</p>
-                      <a href="#" class="btn btn-primary">Jogar</a>
+                      <a href="#" class="btn btn-primary" id="btnjogo1">Jogar</a>
                     </div>
                   </div>
             </div>
@@ -44,7 +46,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Cálculo IMC</h5>
                       <p class="card-text">Faça o calculo e descubra seu IMC.</p>
-                      <a href="#" class="btn btn-primary">Jogar</a>
+                      <a href="#" class="btn btn-primary" id="btnjogo2">Jogar</a>
                     </div>
                   </div>
             </div>            
@@ -54,7 +56,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Pedra, Papel e Tesoura</h5>
                       <p class="card-text">Jogue contra o computador.</p>
-                      <a href="#" class="btn btn-primary">Jogar</a>
+                      <a href="#" class="btn btn-primary" id="btnjogo3">Jogar</a>
                     </div>
                   </div>
             </div>            
@@ -63,7 +65,7 @@
     </div>
 
     <!-- sorte do dia -->
-    <div class="container">
+    <div class="container" id="game1">
         <div class="row p-4 text-center">
             <div class="col-12">
                 <h1 class="text-center text-success"> Sorte do Dia</h1>                        
@@ -74,7 +76,7 @@
         </div>
         <div class="row my-4">
             <div class="row">
-                <div class="col-3">
+                <div class="col-3" id="flw1">
                     <div class="card" style="width: 18rem;">
                         <img src="assets/img/flor_azul.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -82,7 +84,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3" id="flw2">
                     <div class="card" style="width: 18rem;">
                         <img src="assets/img/flor_lotus.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -90,7 +92,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3" id="flw3">
                     <div class="card" style="width: 18rem;">
                         <img src="assets/img/flor_nelumno.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -98,7 +100,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3" id="flw4">
                     <div class="card" style="width: 18rem;">
                         <img src="assets/img/girasol.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -110,18 +112,18 @@
         </div>
         <div class="row my-4">
             <div class="col-12">
-                <h1 class="text-center text-success"> Mensagem </h1>                        
+                <h1 class="text-center text-success" id="msg"> Mensagem </h1>                        
             </div>
         </div>
         <div class="row my-4">
             <div class="col-3">
-                <button type="button" class="btn btn-outline-info">Voltar ao menu</button>
+                <button type="button" class="btn btn-outline-info voltar">Voltar ao menu</button>
             </div>
         </div>
     </div>
 
         <!-- Cálculo IMC  -->
-        <div class="container">
+        <div class="container"id="game2">
             <div class="row p-4 text-center">
                 <div class="col-12">
                     <h1 class="text-center text-info"> Cálculo do IMC</h1>                        
@@ -157,7 +159,7 @@
 
 
          <!-- Cálculo IMC  -->
-         <div class="container">
+         <div class="container" id="game3">
             <div class="row p-4 text-center">
                 <div class="col-12">
                     <h1 class="text-center text-danger"> Pedra, Papel e Tesoura</h1>                        
